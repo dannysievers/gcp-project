@@ -13,5 +13,5 @@ resource "google_project" "project" {
 resource "google_project_service" "project" {
   count = length(var.gcp_services)
   project = "google_project.project.project_id"
-  services = "var.gcp_services[count.index]"
+  service = "var.gcp_services[count.index]"
 }
