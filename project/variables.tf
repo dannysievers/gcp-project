@@ -1,5 +1,5 @@
 variable "project_name" {}
-variable "billing_account" {}
+variable "billing_account_id" {}
 variable "org_id" {}
 
 variable "region" {
