@@ -8,4 +8,5 @@ variable "region" {
 
 variable "gcp_services" {
   type = list(string)
+  default = []
 }

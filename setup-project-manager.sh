@@ -40,7 +40,7 @@ gcloud iam service-accounts keys create ~/.config/gcloud/${GCP_ADMIN_PROJECT_NAM
 
 gcloud projects add-iam-policy-binding ${GCP_ADMIN_PROJECT_NAME} \
   --member serviceAccount:terraform@${GCP_ADMIN_PROJECT_NAME}.iam.gserviceaccount.com \
-  --role roles/viewer
+  --role roles/owner
 
 gcloud projects add-iam-policy-binding ${GCP_ADMIN_PROJECT_NAME} \
   --member serviceAccount:terraform@${GCP_ADMIN_PROJECT_NAME}.iam.gserviceaccount.com \
