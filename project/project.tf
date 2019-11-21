@@ -14,4 +14,5 @@ resource "google_project_service" "project" {
   count = length(var.gcp_services)
   project = google_project.project.project_id
   service = var.gcp_services[count.index]
+  disable_dependent_services = true
 }
