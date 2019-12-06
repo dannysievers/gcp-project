@@ -1,2 +1,2 @@
 # gcp-project-manager
-Resources to set up GCP project management with Terraform
+Terraform module to create GCP project for project billing.
